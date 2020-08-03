@@ -456,10 +456,11 @@
 
 	#banner-wrapper
 	{
+	    background-color: #9e8985;
+	    height: 100;
 		overflow: hidden;
-		padding: 10em 0em 10em 0em;
-		background: url(images/bg01.jpg) no-repeat center top;
-		background-size: 100% auto;
+		padding: 3em 0em 3em 0em;
+		#background-size: 100% auto;
 	}
 
 /*********************************************************************************/
@@ -629,15 +630,15 @@
 
 /******************* Added by Me *******************/
     #websiteTitle{
-        margin-top: 20px;
+        margin-left: 50px;
     }
 
     .section {
-      margin-top: 40px;
+      margin-top: 0px;
     }
 
     .sub-section{
-        margin-bottom: 20px;
+        margin-bottom: 0px;
     }
 
     .explanations{
@@ -645,8 +646,9 @@
     }
 
     .analysis-section{
-        margin-top: 80px;
+        margin-top: 0px;
         }
+
 
 
 
