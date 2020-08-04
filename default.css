@@ -55,7 +55,7 @@
 	{
 		overflow: hidden;
 		margin: 0em auto;
-		width: 1200px;
+		width: 1400px;
 	}
 	
 /*********************************************************************************/
@@ -97,6 +97,8 @@
 		margin: 0 auto;
 		width: auto;
 	}
+
+
 
 /*********************************************************************************/
 /* List Styles                                                                   */
@@ -535,6 +537,7 @@
 	{
 		overflow: hidden;
 		padding: 5em 0em;
+		margin-top: 150px;
 		background: rgba(0,0,0,.05);
 	}
 
@@ -630,11 +633,15 @@
 
 /******************* Added by Me *******************/
     #websiteTitle{
-        margin-left: 50px;
+        margin-left: 100px;
     }
 
     .section {
-      margin-top: 0px;
+      margin-top: 80px;
+    }
+
+    .statistics-section{
+        margin-top: 80px;
     }
 
     .sub-section{
@@ -646,8 +653,32 @@
     }
 
     .analysis-section{
-        margin-top: 0px;
-        }
+        margin-top: 80px;
+    }
+
+    .plot-center{
+        margin:auto;
+    }
+
+    .plot-container{
+        text-align:center;
+    }
+
+    #hashtag-bar{
+        padding-left: 40px;
+    }
+
+    #entity-bar{
+        padding-left: 0px;
+    }
+
+    .stats-container{
+        text-align:center;
+    }
+
+    .stats-table{
+        margin:auto;
+    }
 
 
 
