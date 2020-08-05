@@ -61,7 +61,7 @@ th, td {
 <div id="page" class="container">
 
 	<div>
-		<h2 class="section">Migration Crisis</h2>
+		<h2 class="section">MigraTweets: A Migration Crisis Dataset</h2>
 		<p class="explanations">During 2010s migration crisis reached to its peak in years 2015 and 2016. The number of asylum applications in EU countries for these two years was about 1.3 million cases...
 		</p>
 	</div>
@@ -116,7 +116,14 @@ th, td {
 		</div>
 		<div class="analysis-section">
 			<h2 class="sub-section">3. 20 Top entities and hashtags analysis</h2>
-			<p class="explanations">20 top hashtags in 2016 ......</p>
+			<p class="explanations">We first selected top 20 entities and hashtags of whole year 2016.
+				Then they have been ranked and depicted based on their frequencies on a weekly basis.
+				Among top 20 entities, there are 7 entities which do not contain any of our keywords we used to query.
+				For example, Germany and Turkey are two countries and Donald Trump is a politician which co-occurred
+				with our entity and hashtag keywords more often than their counterparts. Germany had the largest number
+				of migrant arrivals and asylum applications during this time period and Turkey as a transit country hosted
+				the largest number of syrian asylum seekers in 2016.
+			</p>
 			<div>
 				<video id="entity-bar" width="1200" autoplay>
 					<source src="./plots/weekly_bar_race_top20entities.mp4" type="video/mp4">
@@ -130,7 +137,13 @@ th, td {
 		</div>
 		<div class="analysis-section">
 		    <h2 class="sub-section">4. Weekly top 100 entities and hashtags</h2>
-			<p class="explanations">100 Weekly top hashtags ......</p>
+			<p class="explanations">
+				It is possible that an entity or hashtag represents the trending topics on Twitter for only a short time period but they are not
+				among the whole year trending entities and hashtags. Therefore; To visualize entity and hashtag clouds, we took a different approach
+				rather than the previous bar chart race visualizations. Here top 100 entities and hashtags are chosen over the course of each week which
+				consequently leads to more informative visualizations. For example in week () #cologne is seen as one the most frequent hashtags. The
+				reason is ...
+			</p>
 			<div class="plot-container">
 				<img class="plot-center" src="./plots/top100weekly-hashtags-cloud-evolution2016.gif">
 			</div>
