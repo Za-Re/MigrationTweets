@@ -667,8 +667,8 @@
         text-align:center;
     }
 
-    #hashtag-bar{
-        padding-left: 40px;
+    .img-first-col{
+        margin-right: 50px;
     }
 
     #entity-bar{
@@ -682,6 +682,8 @@
     .stats-table{
         margin:auto;
     }
+
+
 
 
 
