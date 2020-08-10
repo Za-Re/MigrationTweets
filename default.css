@@ -660,6 +660,7 @@
 
     .plot-center{
         margin:auto;
+        margin-bottom: 50px;
     }
 
     .plot-container{
