@@ -671,6 +671,10 @@
         margin-right: 50px;
     }
 
+    #hashtag-bar{
+        padding-left: 0px;
+    }
+
     #entity-bar{
         padding-left: 0px;
     }
