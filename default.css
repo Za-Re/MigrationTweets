@@ -35,6 +35,7 @@
 	p
 	{
 		line-height: 180%;
+		text-align: justify;
 	}
 	
 	strong
@@ -650,6 +651,7 @@
 
     .explanations{
         margin-top: 15px;
+        margin-bottom: 50px;
         font-size: 20px;
         font-weight: bolder;
     }
@@ -687,6 +689,20 @@
         margin:auto;
     }
 
+    table, th, td {
+      font-size: 20px;
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 5px;
+      text-align: center;
+    }
+
+    .first-col{
+      text-align: left;
+    }
 
 
 

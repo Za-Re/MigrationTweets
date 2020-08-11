@@ -1,15 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<!--
-Design by TEMPLATED
-http://templated.co
-Released for free under the Creative Commons Attribution License
 
-Name       : Saleable 
-Description: A two-column, fixed-width design with dark color scheme.
-Version    : 1.0
-Released   : 20131118
 
--->
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -22,38 +13,12 @@ Released   : 20131118
 
 <!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
 
-<style>
-table, th, td {
-  font-size: 20px;
-  border: 1px solid black;
-  border-collapse: collapse;
-}
-
-th, td {
-  padding: 5px;
-  text-align: center;
-}
-
-.first-col{
-  text-align: left;
-}
-</style>
-
 </head>
 <body>
 <div id="header" class="container">
 	<div id="logo">
 		<h1><a href="#">MigrAnalytics</a></h1>
 	</div>
-	<!--<div id="menu">
-		<ul>
-			<li><a href="#" accesskey="1" title="">Homepage</a></li>
-			<li><a href="#" accesskey="2" title="">Authors</a></li>
-			<li><a href="#" accesskey="3" title="">Publications</a></li>
-			<li><a href="#" accesskey="4" title="">Statistics</a></li>
-			<li><a href="#" accesskey="5" title="">Contact</a></li>
-		</ul>
-	</div>-->
 </div>
 <div id="banner-wrapper">
 	<h1 id="websiteTitle">MigrAnalytics: Entity-based Analytics of Tweets for Peak Migration Period</h1>
@@ -64,7 +29,7 @@ th, td {
 		<h2 class="section">MigrAnalytics</h2>
 		<p class="explanations">MigrAnalytics provides visual analysis of the tweets related to peak migration period. 
 		It uses <a href="https://data.gesis.org/tweetskb/">TweetsKB</a> as a starting point and then formulates a search 
-			criteria for extracting tweets by enriching the entities and hashtags starting from a seed word ``Refugee" bu using 
+			criteria for extracting tweets by enriching the entities and hashtags starting from a seed word "Refugee" by using
 			<a href="https://wordnet.princeton.edu/">WordNet</a>, <a href="https://www.wikipedia.org/">Wikipedia</a>, and <a href="https://wiki.dbpedia.org/">DBpedia</a>. 
 			It combines European migration statistics from <a href="https://ec.europa.eu/eurostat">Eurostat</a> with the information obtained by the tweets 
 			and provides visual analysis from different perspectives.
@@ -106,24 +71,18 @@ th, td {
 					<td>172,327</td>
 					<td>28,135</td>
 				  </tr>
-				  <!--<tr>
-					<td class="first-col">dbo:Politician</td>
-					<td>849</td>
-					<td>46</td>
-				  </tr>-->
-				  <!--<tr>
-					<td class="first-col">dbo:County</td>
-					<td>18,212</td>
-					<td>313</td>
-				  </tr>-->
 				</table>
 			</div>
 		</div>
 		<div class="analysis-section">
-			<h2 class="sub-section">2. Number of tweets, retweets, likes, and number of asylum applications</h2>
-			<p class="explanations">......</p>
+			<h2 class="sub-section">2. Number of tweets, retweets, favorites, and number of asylum applications</h2>
+			<p class="explanations">In below graphs, number of monthly tweets, retweets and favorites for years 2016 and 2017
+				have been plotted. As it is expected these interactions counts follow the same trend. The red plot demonstrates
+				the monthly number of asylum applications registered in EU during the corresponding years. However the number of
+				tweets and asylum applications are not completely correlated, for some months in 2016 it could be seen the tweets
+				count is affected by the applications count. The number of monthly asylum applications in 2017 is almost as half
+			 	as applications in 2016; nevertheless, number of tweets in the latter year is much higher.</p>
 			<div class="plot-container">
-				<!--<img src="./plots/monthly_three_interactions.png">-->
 				<img class="img-first-col" src="./plots/asylumApp_interactions2016log.png">
 				<img src="./plots/asylumApp_interactions2017log.png">
 			</div>
@@ -135,50 +94,72 @@ th, td {
 				Among top 20 entities, there are 7 entities which do not contain any of our keywords we used to query.
 				For example, Germany and Turkey are two countries and Donald Trump is a politician which co-occurred
 				with our entity and hashtag keywords more often than their counterparts. Germany had the largest number
-				of migrant arrivals and asylum applications during this time period and Turkey as a transit country hosted
-				the largest number of syrian asylum seekers in 2016.
+				of asylum applications in EU during this time period and Turkey as a transit country hosted
+				the largest number of syrian asylum seekers in 2016. In 2017, many of co-occurred hashtags and entities
+				with our primary keywords are related to US migration policies, including: Executive_order,
+				Deferred_Action_for_Childhood_Arrivals or its equivalent hashtag #daca, as well as #nobannowall, and #muslimban.
+				Syria which had the highest number of asylum applications in EU for both 2016 and 2017, is the only country
+				among the 20 top hashtags in year 2017.
+
 			</p>
 			<div>
+				<h2 style="text-align:center; margin-top:80px">20 Top Entities in 2016</h2>
 				<img id="entity-bar" width="1200" src="./plots/weekly_bar_race_top20entities2016.gif"/>
+				<h2 style="text-align:center; margin-top:80px">20 Top Entities in 2017</h2>
 				<img id="entity-bar" width="1200" src="./plots/weekly_bar_race_top20entities2017.gif"/>
+				<h2 style="text-align:center; margin-top:80px">20 Top Hashtags in 2016</h2>
 				<img id="hashtag-bar" width="1200" src="./plots/weekly_bar_race_top20hashtags2016.gif"/>
+				<h2 style="text-align:center; margin-top:80px">20 Top Hashtags in 2017</h2>
 				<img id="entity-bar" width="1200" src="./plots/weekly_bar_race_top20hashtags2017.gif"/>
-
-				<!--<video id="entity-bar" width="1200">
-					<source src="./plots/weekly_bar_race_top20entities.mp4" type="video/mp4">
-					Your browser does not support HTML video.
-				</video>
-				<video id="hashtag-bar" width="1200">
-					<source src="./plots/weekly_bar_race_top20hashtags.mp4" type="video/mp4">
-					Your browser does not support HTML video.
-				</video>-->
 			</div>
 		</div>
 		<div class="analysis-section">
 		    <h2 class="sub-section">4. Weekly top 100 entities and hashtags</h2>
 			<p class="explanations">
 				It is possible that an entity or hashtag represents the trending topics on Twitter for only a short time period but they are not
-				among the whole year trending entities and hashtags. Therefore; To visualize entity and hashtag clouds, we took a different approach
+				among the whole year trending entities and hashtags. Therefore, To visualize entity and hashtag clouds, we took a different approach
 				rather than the previous bar chart race visualizations. Here top 100 entities and hashtags are chosen over the course of each week which
-				consequently leads to more informative visualizations. For example in week () #cologne is seen as one the most frequent hashtags. The
-				reason is ...
+				consequently leads to more informative visualizations. For example for the hashtag cloud of year 2017 between weeks 4 and 6, hashtags
+				such as #muslimban, #nobannowall, #refugeesdetained, #buildthewall, #notoimmigrationban, #stopiranban, #refugeeban, and #immigrationban
+				are among the hashtags with the highest frequency. These trending hashtags are obviously a response to Trump's executive order banning
+				citizens of seven Muslim-majority countries from entering the United States. This also could explain the sharp increase in number of
+				tweets in number of tweets in the first months of 2017- especially in February- compared to the last months of 2016.
 			</p>
 			<div class="plot-container">
-				<img class="plot-center" src="./plots/top100weekly-entities-cloud-evolution2016.gif">
-				<img class="plot-center" src="./plots/top100weekly-hashtags-cloud-evolution2016.gif">
+				<div class="img-first-col" class="plot-center" style="float:left">
+					<h2>Entity Cloud Evolution</h2>
+					<img src="./plots/top100weekly-entities-cloud-evolution2016.gif">
+				</div>
+				<div class="plot-center" style="float:left">
+					<h2>Hashtag Cloud Evolution</h2>
+					<img src="./plots/top100weekly-hashtags-cloud-evolution2016.gif">
+				</div>
+
+
 			</div>
 			<div class="plot-container">
-				<img class="plot-center" src="./plots/top100weekly-entities-cloud-evolution2017.gif">
-				<img class="plot-center" src="./plots/top100weekly-hashtags-cloud-evolution2017.gif">
+				<div  class="img-first-col" class="plot-center" style="float:left">
+					<h2>Entity Cloud Evolution</h2>
+					<img src="./plots/top100weekly-entities-cloud-evolution2017.gif">
+				</div>
+				<div class="plot-center" style="float:left">
+					<h2>Hashtag Cloud Evolution</h2>
+					<img src="./plots/top100weekly-hashtags-cloud-evolution2017.gif">
+				</div>
+
 			</div>
 		</div>
-		<div class="analysis-section">
+		<div class="analysis-section" style="float:right">
 			<h2 class="sub-section">5. Monthly average of sentiments</h2>
 			<p class="explanations">Each tweet has both positive and negative sentiment score which are between 0 and 1. To plot the monthly average
-			of sentiments, we did not consider neutral scores. In the plot for year 2016, the average score for negative sentiments is
-			around 0.50, while for positive sentiments, it is much lower- fluctuating between 0.30 and 0.35</p>
+				of sentiments, we did not consider neutral scores. In the sentiment plot for year 2016, the average score for negative sentiments is ranging
+				from 0.48 to 0.51, while for positive sentiments, it is much lower- fluctuating between 0.31 and 0.33. For year 2017, the average score for
+				negative sentiments is ranging from 0.46 to 0.52. Similar to year 2016, average positive sentiment is much lower- fluctuating between 0.31 and 0.32.
+				In general, based on monthly average sentiments for both years it could be interpreted that when it comes to subjective and opinionated
+				tweets, the negative sentiment of tweets towards migrants is much more intense than positive ones.</p>
 			<div class="plot-container">
-				<img class="plot-center" src="./plots/monthly_avg_sentiment2016.png">
+				<img class="img-first-col" src="./plots/monthly_avg_sentiment2016.png">
+				<img src="./plots/monthly_avg_sentiment2017.png">
 			</div>
 		</div>
 	</div>
@@ -190,7 +171,6 @@ th, td {
 	<ul class="contact">
 		<li><a href="https://twitter.com/fiziseka" class="icon icon-twitter"><span>Twitter</span></a></li>
 	</ul>
-
 	<p>&copy; All rights reserved.</p>
 </div>
 </body>
